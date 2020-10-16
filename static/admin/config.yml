@@ -28,7 +28,6 @@ collections:
           label: Date,
           widget: datetime,
           date_format: "YYYY-MM-DD",
-          format: "L",
           required: true,
         }
       - { name: body, label: Body, widget: markdown, required: true }
