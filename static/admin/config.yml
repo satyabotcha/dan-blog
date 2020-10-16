@@ -1,0 +1,33 @@
+backend:
+  name: test-repo
+
+media_folder: static/assets
+public_folder: /assets
+
+publish_mode: editorial_workflow
+display_url: https://www.dantang.co.uk
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/posts"
+    create: true
+
+    fields:
+      - { name: title, label: Title, widget: "string", required: true }
+      - { name: subtitle, label: Subtitle, widget: "string", required: true }
+      - {
+          name: slug,
+          label: URL,
+          required: true,
+          hint: e.g. 'smile'. Will show up as dantang.co.uk/smile,
+        }
+      - {
+          name: date,
+          label: Date,
+          widget: datetime,
+          date_format: "DD.MM.YYYY",
+          format: "L",
+          required: true,
+        }
+      - { name: body, label: Body, widget: markdown, required: true }

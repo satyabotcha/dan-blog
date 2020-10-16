@@ -1,10 +1,19 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
+  siteMetadata: {
+    title: `Dan Tang`,
+    siteUrl: `https://www.dantang.co.uk`,
+    description: `Personal Blog of Dan Tang`,
+  },
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/posts/`,
+      },
+    },
+  ],
 }
