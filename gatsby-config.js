@@ -8,7 +8,12 @@ module.exports = {
   /* Your site config here */
   plugins: [
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require("tailwindcss")],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-netlify-cms`,

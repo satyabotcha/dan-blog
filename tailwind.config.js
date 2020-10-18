@@ -3,7 +3,18 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  purge: {
+    mode: "all",
+    content: [
+      "./src/**/*.js",
+      "./src/**/*.jsx",
+      "./src/**/*.ts",
+      "./src/**/*.tsx",
+    ],
+    options: {
+      whitelist: ["h1", "h2", "h3", "blockquote", "strong", "em"],
+    },
+  },
   theme: {
     container: {
       center: true,
