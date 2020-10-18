@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: satyabotcha/dan-blog
+  name: git-gateway
 
 media_folder: static/assets
 public_folder: /assets

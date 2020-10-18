@@ -2,10 +2,14 @@ module.exports = {
   siteMetadata: {
     title: `Dan Tang`,
     siteUrl: `https://www.dantang.co.uk`,
-    description: `Personal Blog of Dan Tang`,
+    description: `Dan Tang's Personal Blog`,
+    author: `Dan Tang`,
   },
   /* Your site config here */
   plugins: [
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {

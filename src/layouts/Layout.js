@@ -17,7 +17,7 @@ export default function Layout({ children }) {
     }
   `)
   return (
-    <div>
+    <div className="md:m-12 m-6">
       <Navbar title={title} />
       {children}
     </div>

@@ -3,10 +3,12 @@ import { Link } from "gatsby"
 
 export default function Navbar({ title }) {
   return (
-    <div>
+    <React.Fragment>
       <Link to="/">
-        <h1>{title}</h1>
+        <h1 className="text-primary font-title font-bold hover:text-black text-xl">
+          {title}
+        </h1>
       </Link>
-    </div>
+    </React.Fragment>
   )
 }
