@@ -1,7 +1,7 @@
 ---
 title: Guillam Cafe
 subtitle: Writing in Guillam
-slug: /guillam
+slug: guillam
 date: 2020-10-18T13:06:41.753Z
 ---
 ## First
