@@ -1,6 +1,6 @@
 import React from "react"
 import HomeLayout from "../layouts/HomeLayout"
 
-export default function Home() {
-  return <HomeLayout>Hello</HomeLayout>
+export default function index() {
+  return <HomeLayout></HomeLayout>
 }
