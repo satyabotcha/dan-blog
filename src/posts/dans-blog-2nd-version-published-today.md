@@ -1,7 +1,9 @@
 ---
-title: Dan's blog 2nd version Published Today
-subtitle: No subtitle
-slug: 2vblog
+title: Food & Philosophy
+subtitle: Who I am
+slug: whoiam
 date: 2020-10-18T16:24:25.721Z
 ---
-Dan's blog 2nd version -- created by Satya Botcha
+Food and Philosophy
+
+Feel
